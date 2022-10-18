@@ -10,6 +10,8 @@ public class Student {
     int ForeignEverage;
 }
 
+
+
 class StudentTest {
 
     public static void main(String[] args) {

@@ -6,12 +6,14 @@ public class Bankaccount {
     double Balance = 100.00;
 
 
+
+
 }
 
 
 class BankAccountTest {
 
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         Bankaccount MyAccount = new Bankaccount();
         Bankaccount YourAccount = new Bankaccount();
         Bankaccount HisAccount = new Bankaccount();

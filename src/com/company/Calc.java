@@ -14,6 +14,7 @@ public class Calc {
         Scanner scanner = new Scanner(System.in);
         System.out.println("введи выражение");
         String exp = scanner.nextLine();
+
         int actionIndex=-1;
         for (int i=0; i<actions.length; i++){
             if (exp.contains(actions[i])){

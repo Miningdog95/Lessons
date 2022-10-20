@@ -8,8 +8,12 @@ public class Student {
     int MathEverage;
     int EconomicEverage;
     int ForeignEverage;
-}
 
+    double everage() {
+        double everage = (MathEverage + EconomicEverage + ForeignEverage) / 3;
+        return everage;
+    }
+}
 
 
 class StudentTest {
@@ -27,6 +31,7 @@ class StudentTest {
         Mike.MathEverage = 5;
         Mike.EconomicEverage = 5;
         Mike.ForeignEverage = 5;
+        System.out.println(Mike.everage());
 
         Sabi.BiletNomer = 2;
         Sabi.Name = "Sabi";
@@ -35,6 +40,7 @@ class StudentTest {
         Sabi.MathEverage = 3;
         Sabi.EconomicEverage = 3;
         Sabi.ForeignEverage = 5;
+        System.out.println(Sabi.everage());
 
         Dima.BiletNomer = 3;
         Dima.Name = "Dima";
@@ -43,13 +49,9 @@ class StudentTest {
         Dima.MathEverage = 5;
         Dima.EconomicEverage = 4;
         Dima.ForeignEverage = 3;
+        System.out.println(Dima.everage());
 
 
-        System.out.println("Everage " + Mike.Name + " " + Mike.LastName + "=" + (Mike.MathEverage + Mike.EconomicEverage + Mike.ForeignEverage) / 3);
-
-        System.out.println("Everage " + Sabi.Name + " " + Sabi.LastName + "=" + (Sabi.MathEverage + Sabi.EconomicEverage + Sabi.ForeignEverage) / 3);
-
-        System.out.println("Everage " + Dima.Name + " " + Dima.LastName + "=" + (Dima.MathEverage + Dima.EconomicEverage + Dima.ForeignEverage) / 3);
     }
 }
 

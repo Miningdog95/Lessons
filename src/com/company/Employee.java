@@ -7,8 +7,8 @@ public class Employee {
     int salary;
     String department;
     double salaryX2(){
-        double salaryX2 = salary * 2;
-        return salaryX2;
+        salary *= 2;
+        return salary;
     }
 
 }
@@ -22,13 +22,15 @@ public static void main(String[] args){
     Petr.age = 35;
     Petr.salary = 100;
     Petr.department = "ASU TP";
-    System.out.println(Petr.salaryX2());
+    Petr.salaryX2();
+    System.out.println(Petr.salary);
 
     Gena.id = 1;
     Gena.surname = "Gena";
     Gena.age = 48;
     Gena.salary = 85;
     Gena.department = "Stroy";
-    System.out.println(Gena.salaryX2());
+    Gena.salaryX2();
+    System.out.println(Gena.salary);
 }
 }

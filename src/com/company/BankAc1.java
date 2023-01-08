@@ -5,12 +5,12 @@ public class BankAc1 {
     String name = "Petr";
     double Balance = 100.00;
     double popolnenieScheta(double x) {
-        double popolnenieScheta = Balance + x;
-        return popolnenieScheta;
+        Balance += x;
+        return Balance;
     }
     double snyatieScheta(double y){
-        double snyatieScheta = Balance - y;
-        return snyatieScheta;
+        Balance -= y;
+        return Balance;
     }
 }
 

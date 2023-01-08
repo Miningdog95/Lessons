@@ -1,56 +1,46 @@
 package com.company;
 
+import java.awt.dnd.DragGestureEvent;
+
 public class Student {
-    int BiletNomer;
-    String Name;
-    String LastName;
-    int YearEducation;
-    int MathEverage;
-    int EconomicEverage;
-    int ForeignEverage;
+    Student(int id1, String name1, String surname1, int yearEducation1, int b1, int c1, int d1) {
 
-    double everage() {
-        double everage = (MathEverage + EconomicEverage + ForeignEverage) / 3;
-        return everage;
+        id = id1;
+        name = name1;
+        surname = surname1;
+        yearEducation = yearEducation1;
+        mathEverage = b1;
+        economicEverage = c1;
+        foreignEverage = d1;
     }
-}
 
+    Student(int id2, String name2, String surname2, int yearEducation2) {
+        this(id2, name2, surname2, yearEducation2, 0, 0, 0);
+    }
+
+    Student(){
+    }
+
+    int id;
+    String name;
+    String surname;
+    int yearEducation;
+    int mathEverage;
+    int economicEverage;
+    int foreignEverage;
+
+}
 
 class StudentTest {
 
     public static void main(String[] args) {
 
-        Student Mike = new Student();
-        Student Sabi = new Student();
-        Student Dima = new Student();
-
-        Mike.BiletNomer = 1;
-        Mike.Name = "Mike";
-        Mike.LastName = "Ivanov";
-        Mike.YearEducation = 2012;
-        Mike.MathEverage = 5;
-        Mike.EconomicEverage = 5;
-        Mike.ForeignEverage = 5;
-        System.out.println(Mike.everage());
-
-        Sabi.BiletNomer = 2;
-        Sabi.Name = "Sabi";
-        Sabi.LastName = "Buzik";
-        Sabi.YearEducation = 2012;
-        Sabi.MathEverage = 3;
-        Sabi.EconomicEverage = 3;
-        Sabi.ForeignEverage = 5;
-        System.out.println(Sabi.everage());
-
-        Dima.BiletNomer = 3;
-        Dima.Name = "Dima";
-        Dima.LastName = "Belyaev";
-        Dima.YearEducation = 2013;
-        Dima.MathEverage = 5;
-        Dima.EconomicEverage = 4;
-        Dima.ForeignEverage = 3;
-        System.out.println(Dima.everage());
-
+        Student Mike = new Student(1, "Mike", "Ivanov", 2, 4, 5, 4);
+        System.out.println(Mike.id + " " + Mike.name + " " + Mike.surname + " " + Mike.yearEducation + " " + Mike.mathEverage + " " + Mike.economicEverage + " " + Mike.foreignEverage);
+        Student Sabi = new Student(2, "Sabi", "Buz",1);
+        System.out.println(Sabi.id + " " + Sabi.name + " " + Sabi.surname+ " " + Sabi.yearEducation);
+        Student Gena = new Student();
+        System.out.println(Gena.id + Gena.name + Gena.surname);
 
     }
 }

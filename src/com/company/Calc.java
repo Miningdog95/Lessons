@@ -1,7 +1,5 @@
 package com.company;
 
-import jdk.management.resource.internal.inst.SocketOutputStreamRMHooks;
-
 import java.lang.ref.SoftReference;
 import java.util.Scanner;
 
